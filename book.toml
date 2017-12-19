@@ -1,0 +1,4 @@
+[book]
+authors = ["Markus Kohlhase"]
+multilingual = false
+src = "src"
