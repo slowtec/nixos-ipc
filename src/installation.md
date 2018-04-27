@@ -56,6 +56,14 @@ Generate the NixOS configuration for the IPC:
 
     nixos-generate-config --root /mnt
 
+Adjust the `/mnt/etc/nixos/configuration.nix` file for your needs.
+
+An example configuration looks like this:
+
+```nix
+{{#include ../configuration.nix}}
+```
+
 Finally trigger the installation process:
 
     nixos-install
