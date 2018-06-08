@@ -1,6 +1,12 @@
 # IPC Linux Installation
 
 Start the IPC and login as root.
+If you are using a German keyboard you can use
+
+```
+loadkeys de
+```
+to load the corresponding keyboard layout.
 
 ## Internet Access
 
