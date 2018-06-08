@@ -70,6 +70,12 @@ An example configuration looks like this:
 {{#include ../configuration.nix}}
 ```
 
+You can also download this configuration:
+
+```
+curl -o /mnt/etc/nixos/configuration.nix https://raw.githubusercontent.com/slowtec/nixos-ipc/master/configuration.nix
+```
+
 Finally trigger the installation process:
 
     nixos-install
