@@ -94,3 +94,20 @@ ssh -L 8081:127.0.0.1:8081 root@192.168.0.200 -N
 which is like *"forward my local port 8081 to port 8081 at 127.0.0.1 on the server"*
 
 Now open your browser and go to `http://localhost:8000`.
+
+## Build NixOS from local repository
+
+```
+git clone https://github.com/NixOS/nixpkgs.git
+cd nixpkgs/
+```
+You might checkout a specific version, e.g.
+```
+git checkout 2f6440e
+```
+or modify any files you like.
+
+Finally you can trigger the rebuild:
+```
+nixos-rebuild -I nixpkgs=. switch
+```
