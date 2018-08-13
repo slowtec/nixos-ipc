@@ -10,21 +10,21 @@ ISO_URL=$MINIMAL_ISO
 FILE="$NAME.iso"
 COUNT=0
 
-function createSHAUrl {
+createSHAUrl() {
   SHA_URL="$ISO_URL.sha256"
 }
 
-function download {
+download() {
   echo "Downloading ISO image $ISO_URL"
   wget -q $ISO_URL -O $FILE
 }
 
-function clean {
+clean() {
   rm ".CHECKSUMS"
   rm ".$NAME.sha256"
 }
 
-function check {
+check() {
   echo "Checking current ISO image '$FILE'"
   wget -q $SHA_URL -O ".$NAME.sha256"
   echo "`cat .$NAME.sha256` $FILE" > ".CHECKSUMS"
