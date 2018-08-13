@@ -39,7 +39,7 @@ Make sure the IPC is connected with to the internet.
 After starting the IPC, make sure the following BIOS settings
 were made:
 
-- disable Hibernation (`Advanced` > `Enable Hibernation` > `Disabled`)
+- disable Hibernation (`Advanced` > `ACPI Settings` > `Enable Hibernation` > `Disabled`)
 - disable Suspend (`Advanced` > `ACPI Sleep State` > `Suspend Disabled`)
 - enable automatic boot after power failure (`Chipset` > `Restore AC Power Loss` > `Power On`)
 - set boot priority (`Boot` > `Boot Option Priorities` > `Boot Option #1` > `USB DISK 2.0`)
