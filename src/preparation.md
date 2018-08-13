@@ -9,13 +9,14 @@ You'll need:
 - USB stick
 - Monitor + HDMI cable
 - Internet access
-- Linux computer
+- Linux computer (e.g. installed with Ubuntu 18.04 LTS)
 
 ## NixOS USB Stick
 
 First download a stable [NixOS ISO image](https://nixos.org/nixos/download.html):
 
 ```
+sudo apt-get install wget curl
 curl https://raw.githubusercontent.com/slowtec/nixos-ipc/master/download-nixos.sh -sSf | sh
 ```
 
