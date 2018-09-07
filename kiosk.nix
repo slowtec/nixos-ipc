@@ -35,7 +35,7 @@
         xset s off &
         xset b off &
         sleep 1;
-        while true; do ${pkgs.chromium}/bin/chromium --kiosk http://127.0.0.1.80/; done
+        while true; do ${pkgs.chromium}/bin/chromium --kiosk http://127.0.0.1:80/; done
       '';
     }];
 
