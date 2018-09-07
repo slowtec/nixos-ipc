@@ -23,20 +23,20 @@
 
     interfaces = {
       # LAN A
-      enp1s0 = {
-        ipAddress = "192.168.0.200";
+      enp1s0.ipv4.addresses = [{
+        address = "192.168.0.200";
         prefixLength = 24;
-      };
+      }];
       # LAN B
-      enp2s0 = {
-        ipAddress = "192.168.0.100";
+      enp2s0.ipv4.addresses = [{
+        address = "192.168.0.100";
         prefixLength = 24;
-      };
+      }];
       # WLAN
-      wlp3s0 = {
-        ipAddress = "192.168.1.1";
+      wlp3s0.ipv4.addresses = [{
+        address = "192.168.1.1";
         prefixLength = 24;
-      };
+      }];
     };
   };
 
