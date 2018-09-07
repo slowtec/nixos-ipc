@@ -3,6 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./kiosk.nix
   ];
 
   boot.kernelParams = ["nomodeset"];
