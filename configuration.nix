@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./kiosk.nix
+    ./touchscreen.nix
   ];
 
   boot.kernelParams = ["nomodeset"];
