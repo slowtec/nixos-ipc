@@ -111,3 +111,19 @@ Finally you can trigger the rebuild:
 ```
 nixos-rebuild -I nixpkgs=. switch
 ```
+
+## GPU info
+
+If need to know some information about the installed CPU
+you can use `lshw` (`nix-env -iA nixos.lshw`):
+
+```
+lshw -C display
+```
+
+To analyse an intel GPU you can do the following:
+
+```
+nix-env -iA nixos.intel-gpu-tools
+intel_gpu_top
+```
