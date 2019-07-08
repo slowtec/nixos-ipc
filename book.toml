@@ -1,4 +1,7 @@
 [book]
-authors = ["Markus Kohlhase"]
-multilingual = false
-src = "src"
+title = "NixOS IPC"
+author = "slowtec GmbH"
+description = "Run NixOS on Industrial PCs"
+
+[output.html]
+git-repository-url = "https://github.com/slowtec/nixos-ipc"
